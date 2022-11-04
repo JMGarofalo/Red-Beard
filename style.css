@@ -175,6 +175,7 @@ nav ul li a{
 .nosotros-img img {
     width: 70%;
     border-radius: 10px;
+    box-shadow: 10px 10px 20px #c4c4c4;
 }
 
 .nosotros-det h1 {
@@ -286,16 +287,27 @@ hr {
 
 /* UBICACION */
 
+#ubicacion {
+    width: 80%;
+    padding: 70px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: auto;
+}
 
-
+.map {
+    box-shadow: 10px 10px 20px #c4c4c4;
+}
 
 
 
 /* CONTACTO */
 
 #contacto {
+    width: 100%;
+    padding: 70px 0;
     background: #e5e5e5;
-    z-index: 1;
 }
 
 .formulario-box {
@@ -307,11 +319,9 @@ hr {
     max-width: 500px;
     margin: 0 auto;
     padding: 20px;
-    box-shadow: 0px 0px 20px #00000010;
+    box-shadow: 10px 10px 10px #c4c4c4;
     background: #ffffff;
     border-radius: 8px;
-    /* padding-bottom: 50px; */
-    /* margin-bottom: 20px; */
 }
 
 .form-group {
@@ -359,7 +369,7 @@ button[type="submit"]:hover {
 /* FOOTER */
 
 #footer {
-    padding: 60px 0 20px;
+    padding: 70px 0 20px;
     background: #a8a8a8;
 }
 
