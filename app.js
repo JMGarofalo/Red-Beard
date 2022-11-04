@@ -1,19 +1,35 @@
 
-/* Menu lateral*/ 
 
-var menuBtn = document.getElementById("menuBtn")
-var header = document.getElementById("header")
-var menu = document.getElementById("menu")
+/* VALIDACION FORMULARIO */
 
-header.style.right = "-250px";
+function validar(){
+    validarnombre();
+    validaremail();
+    validarmensaje();
+}
 
-menuBtn.onclick = function(){
-    if(header.style.right == "-250px"){
-        header.style.right = "0";
-        menu.src = "/img/close.png"
-    } 
-    else {
-        header.style.right = "-250px";
-        menu.src = "/img/menu.png";
+function validarnombre(){
+    var x=document.myform.nombre.value;
+    if (x=="") {
+        alert("Ingresar un nombre válido");
+        return false;
     }
 }
+function validaremail()  {  
+    var x=document.myform.email.value;  
+    var atposition=x.indexOf("@");  
+    var dotposition=x.lastIndexOf(".");  
+    if (atposition<1 || dotposition<atposition+2 || dotposition+2>=x.length){  
+        alert("Ingresar un email válido");  
+        return false;  
+    }  
+}  
+
+function validarmensaje(){
+    var x=document.myform.mensaje.value;
+    if (x=="") {
+        alert("Ingresar un mensaje no vacio");
+        return false;
+    }
+}
+
