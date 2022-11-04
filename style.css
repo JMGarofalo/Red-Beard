@@ -310,8 +310,8 @@ hr {
     box-shadow: 0px 0px 20px #00000010;
     background: #ffffff;
     border-radius: 8px;
-    padding-bottom: 50px;
-    z-index: 2;
+    /* padding-bottom: 50px; */
+    /* margin-bottom: 20px; */
 }
 
 .form-group {
