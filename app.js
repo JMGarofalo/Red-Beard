@@ -6,6 +6,7 @@ function validar(){
     validarnombre();
     validaremail();
     validarmensaje();
+    return false;
 }
 
 function validarnombre(){
