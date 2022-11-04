@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Playfair+Display+SC:wght@700&display=swap');
 
 * {
@@ -8,6 +9,11 @@
 body {
     font-family: 'Montserrat', sans-serif;
 }
+
+
+
+
+/* HOME */
 
 #home {
     background: linear-gradient(rgba(0,0,0,0.6),#321414), url(img/home.jpg);
@@ -119,7 +125,12 @@ nav ul li a{
     margin-top: 15px;
 }
 
-#nosotros {  /*feature*/
+
+
+
+/* NOSOTROS */
+
+#nosotros {
     width: 100%;
     padding: 70px 0;
 }
@@ -197,6 +208,8 @@ nav ul li a{
 
 
 
+/* SERVICIOS */
+
 #servicios {
     width: 100%;
     padding: 70px 0;
@@ -268,9 +281,90 @@ hr {
     opacity: 1;
 }
 
+
+
+
+/* UBICACION */
+
+
+
+
+
+
+/* CONTACTO */
+
+#contacto {
+    background: #e5e5e5;
+    z-index: 1;
+}
+
+.formulario-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 90%;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    box-shadow: 0px 0px 20px #00000010;
+    background: #ffffff;
+    border-radius: 8px;
+    padding-bottom: 50px;
+    z-index: 2;
+}
+
+.form-group {
+    width: 100%;
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 5px;
+    font-size: 18px;
+    border: 1px solid rgba(179, 40, 40, 0.199);
+    margin-top: 5px;
+}
+
+textarea {
+    resize: vertical;
+    font-family: "Montserrat";
+}
+
+button[type="submit"] {
+    font-family: "Montserrat";
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 20px;
+    font-size: 24px;
+    border-radius: 8px;
+    color: #6a2b2b;
+    text-align: center;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: 0.3s ease background-color;
+}
+
+button[type="submit"]:hover {
+    background-color: #dfdfdf;
+}
+
+
+
+
+/* FOOTER */
+
 #footer {
     padding: 100px 0 20px;
     background: #a8a8a8;
+}
+
+#red-beard {
+    font-family: 'Playfair Display SC', serif;
 }
 
 .footer-row {
@@ -337,17 +431,9 @@ hr {
 
 
 
+/* RESPONSIVE */
 
-
-
-
-
-
-
-
-
-
-@media screen and (max-width: 770px) {
+@media screen and (max-width: 795px) {
     
     .home-text h1{
         font-size: 45px;
@@ -394,5 +480,20 @@ hr {
     .footer-left, .footer-right {
         flex-basis: 100%;
         font-size: 14px;
+    }
+}
+
+
+@media screen and (max-width: 1250px) {
+    .nosotros-det {
+        flex-basis: 100%;
+    }
+
+    .nosotros-img {
+        flex-basis: 100%;
+    }
+
+    .nosotros-img img{
+        width: 60%;
     }
 }
