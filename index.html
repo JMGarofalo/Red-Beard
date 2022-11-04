@@ -36,9 +36,9 @@
             <div class="home-btn">
                 <a href="#nosotros"><span></span>Nosotros</a>
                 <a href="#servicios"><span></span>Servicios</a>
-                <a href="#ubicacion"><span></span>Ubicacion</a>
+                <a href="#ubicacion"><span></span>Ubicación</a>
                 <a href="#contacto"><span></span>Contacto</a>
-                <a href="#footer"><span></span>Informacion</a>
+                <a href="#footer"><span></span>Información</a>
             </div>
         </div>
     </section>
@@ -158,21 +158,21 @@
         </div>
         <div class formulario>
             <div class="formulario-box">
-                <form action="https://formspree.io/f/xlevolal" method="POST" id="my-form">
+                <form action="https://formspree.io/f/xlevolal" method="POST" id="myform" name="myform" onsubmit="return validar()">
                 
                 <div class="form-group">
                     <label for="nombre"> Nombre</label>
-                    <input type="text" id="nombre" name="nombre" required>
+                    <input type="text" id="nombre" name="nombre">
                 </div>
                 
                 <div class="form-group">
                     <label for="email">Email</label>
-                    <input type="email" id="email" name="email" required>
+                    <input  id="email" name="email">
                 </div>
                 
                 <div class="form-group">
                     <label for="mensaje">Mensaje</label>
-                    <textarea name="mensaje" id="mensaje" cols="30" rows="10" required></textarea>
+                    <textarea name="mensaje" id="mensaje" cols="30" rows="10"></textarea>
                 </div>
                 
                 <button type="submit">Enviar</button>
@@ -207,13 +207,9 @@
             <i class="fa fa-twitter"></i>
             <i class="fa fa-whatsapp"></i>
         </div>
-
     </section>
 
 
-
-
-    
     <!-- Menu lateral -->
     <script>
     var menuBtn = document.getElementById("menuBtn")
