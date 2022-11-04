@@ -21,9 +21,12 @@
                 <li><a href="#servicios">SERVICIOS</a></li>
                 <li><a href="#ubicacion">UBICACION</a></li>
                 <li><a href="#contacto">CONTACTO</a></li>
+                <li><a href="#footer">INFORMACION</a></li>
             </ul>
         </nav>
     </header>
+
+
 
     <section id="home">
         <p class="logo"> RB </p>
@@ -35,12 +38,15 @@
                 <a href="#servicios"><span></span>Servicios</a>
                 <a href="#ubicacion"><span></span>Ubicacion</a>
                 <a href="#contacto"><span></span>Contacto</a>
+                <a href="#footer"><span></span>Informacion</a>
             </div>
         </div>
     </section>
     <div id="menuBtn">
         <img src="/img/menu.png" id="menu">
     </div>
+
+
 
     <section id="nosotros"> <!--feature-->
         <div class="title-text">
@@ -55,7 +61,9 @@
                         <i class="fa fa-shield"></i>
                     </div>
                     <div class="nosotros-desc-text"></div>
-                    <p>Lorem Minus, nesciunt laborum adipisci nisi ipsa ullam vero, similique magni porro fuga ab nihil ex beatae, architecto officia aliquam reprehenderit voluptate unde?</p>
+                    <p>Nuestros hábiles barberos y peluqueros cuentan con años de preparación y trabajo. Te darán la mejor experiencia tanto en cortes, retocados y lavados como en estilizados. 
+                        
+                    </p>
                 </div>
                 <h1>Turnos exclusivos</h1>
                 <div class="nosotros-desc">
@@ -63,7 +71,7 @@
                         <i class="fa fa-check-square-o"></i>
                     </div>
                     <div class="nosotros-desc-text"></div>
-                    <p>Lorem Minus, nesciunt laborum adipisci nisi ipsa ullam vero, similique magni porro fuga ab nihil ex beatae, architecto officia aliquam reprehenderit voluptate unde?</p>
+                    <p>Reservá tu turno exclusivo por telefono, whatsapp, instagram o de forma presencial. Te ofrecemos los mejores horarios y personal exclusivo para que disfrutes nuestros servicios. </p>
                 </div>   
                 <h1>Precios especiales</h1>
                 <div class="nosotros-desc">
@@ -71,7 +79,7 @@
                         <i class="fa fa-money"></i>
                     </div>
                     <div class="nosotros-desc-text"></div>
-                    <p>Lorem Minus, nesciunt laborum adipisci nisi ipsa ullam vero, similique magni porro fuga ab nihil ex beatae, architecto officia aliquam reprehenderit voluptate unde?</p>
+                    <p>Disponemos de los mejores precios, con descuentos, ofertas y promociones semanales. Además, te ofrecemos la posibilidad de abonar en efectivo, tarjeta o billeteras virtuales. </p>
                 </div>                   
             </div>
             <div class="nosotros-img">
@@ -80,6 +88,8 @@
 
         </div>
     </section>
+
+
         
     <section id="servicios">
         <div class="title-text">
@@ -94,7 +104,7 @@
                 <div class="servicio-desc">
                     <h3>Pelo</h3>
                     <hr>
-                    <p>TextoTextoTextoTextoTextoTextoTexto</p>
+                    <p>Cortamos y damos forma a tu pelo</p>
                 </div>
             </div>
 
@@ -104,7 +114,7 @@
                 <div class="servicio-desc">
                     <h3>Barba</h3>
                     <hr>
-                    <p>TextoTextoTextoTextoTextoTextoTexto</p>
+                    <p>Retocamos y estilizamos tu barba </p>
                 </div>
             </div>
 
@@ -114,7 +124,7 @@
                 <div class="servicio-desc">
                     <h3>Estilo</h3>
                     <hr>
-                    <p>TextoTextoTextoTextoTextoTextoTexto</p>
+                    <p>Renovamos tu look</p>
                 </div>
             </div>
 
@@ -124,7 +134,7 @@
                 <div class="servicio-desc">
                     <h3>Lavado</h3>
                     <hr>
-                    <p>TextoTextoTextoTextoTextoTextoTexto</p>
+                    <p>Refrescamos tu cabello</p>
                 </div>
             </div>
         </div>
@@ -132,25 +142,50 @@
 
 
     <section id="ubicacion">
-                <div class="title-text">
+        <div class="title-text">
             <p>UBICACION</p>
-            <h1>Donde nos encontrás</h1>
-        </div>
+            <h1>Dónde nos encontrás</h1>
+
+        </div>     
     </section>
+
 
 
     <section id="contacto">
         <div class="title-text">
             <p>CONTACTO</p>
-            <h1>Estemos en contacto</h1>
+            <h1>Dejanos tu mensaje</h1>
+        </div>
+        <div class formulario>
+            <div class="formulario-box">
+                <form action="https://formspree.io/f/xlevolal" method="POST" id="my-form">
+                
+                <div class="form-group">
+                    <label for="nombre"> Nombre</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="mensaje">Mensaje</label>
+                    <textarea name="mensaje" id="mensaje" cols="30" rows="10" required></textarea>
+                </div>
+                
+                <button type="submit">Enviar</button>
+                </form>
+            </div>
         </div>
     </section> 
 
     
+
     <section id="footer">
-        <img src="/img/" alt="">
         <div class="title-text">
-            <p>RED BEARD</p>
+            <p id="red-beard">RED BEARD</p>
             <h1>Visitanos</h1>
         </div>
         <div class="footer-row">
@@ -174,6 +209,9 @@
         </div>
 
     </section>
+
+
+
 
     
     <!-- Menu lateral -->
