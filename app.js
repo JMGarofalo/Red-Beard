@@ -1,12 +1,11 @@
 
-
 /* VALIDACION FORMULARIO */
 
 function validar(){
-    validarnombre();
-    validaremail();
-    validarmensaje();
-    return false;
+    var nombreValido = validarnombre();
+    var emailValido = validaremail();
+    var mensajeValido = validarmensaje();
+    return (nombreValido && emailValido && mensajeValido);
 }
 
 function validarnombre(){
@@ -33,4 +32,5 @@ function validarmensaje(){
         return false;
     }
 }
+
 
