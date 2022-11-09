@@ -10,6 +10,7 @@ function validar(){
 
 function validarNombre(){
     var x=document.myform.nombre.value;
+    x = x.replace(/\s+/g, "");
     if (x=="") {
         alert("Ingresar un nombre válido");
         return false;
@@ -27,8 +28,9 @@ function validarEmail()  {
 
 function validarMensaje(){
     var x=document.myform.mensaje.value;
+    x = x.replace(/\s+/g, "");
     if (x=="") {
-        alert("Ingresar un mensaje no vacio");
+        alert("Ingresar un mensaje");
         return false;
     }
 }
