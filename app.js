@@ -2,9 +2,9 @@
 /* VALIDACION FORMULARIO */
 
 function validar() {
-    let nombreValido = validarNombre()
-    let emailValido = validarEmail()
-    let mensajeValido = validarMensaje()
+    let nombreValido = validarNombre();
+    let emailValido = validarEmail();
+    let mensajeValido = validarMensaje();
     return (nombreValido && emailValido && mensajeValido);
 }
 
