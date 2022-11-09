@@ -1,5 +1,4 @@
 
-
 /* VALIDACION FORMULARIO */
 
 function validar(){
@@ -35,7 +34,6 @@ function validarEmail()  {
 function validarMensaje(){
     let esValido = true;
     let mensaje = document.myform.mensaje.value;
-    //x = x.replace(/\s+/g, "");
     mensaje = mensaje.trim();
     if (mensaje=="") {
         alert("Ingresar un mensaje");
