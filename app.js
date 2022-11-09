@@ -8,7 +8,6 @@ function validar() {
     return (nombreValido && emailValido && mensajeValido);
 }
 
-
 function validarNombre() {
     let esValido = true;
     let nombre = document.myform.nombre.value.trim();
@@ -18,7 +17,6 @@ function validarNombre() {
     }
     return esValido;
 }
-
 
 function validarEmail() {
     let esValido = true; 
@@ -34,7 +32,6 @@ function validarEmail() {
     }
     return esValido;  
 }  
-
 
 function validarMensaje() {
     let esValido = true;
