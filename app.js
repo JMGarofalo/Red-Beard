@@ -21,12 +21,12 @@ function validarNombre() {
 function validarEmail() {
     let esValido = true; 
     let email = document.myform.email.value.trim();  
-    let atposition = email.indexOf("@");  
-    let dotposition = email.lastIndexOf(".");
+    let posicionArroba = email.indexOf("@");  
+    let posicionPunto = email.lastIndexOf(".");
     if (email=="") {
         alert("Ingresar un email");  
         esValido = false;
-    } else if (atposition<1 || dotposition<atposition+2 || dotposition+2>=email.length || email.includes(" ")) {
+    } else if (posicionArroba<1 || posicionPunto<posicionArroba+2 || posicionPunto+2>=email.length || email.includes(" ")) {
             alert("Ingresar un email válido");  
             esValido = false;  
     }
