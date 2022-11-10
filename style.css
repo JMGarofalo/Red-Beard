@@ -510,5 +510,7 @@ button[type="submit"]:hover {
 
 @media screen and (max-width: 480px) {
     .home-btn {
-        display: none;
+        display: block;
     }
+
+    
