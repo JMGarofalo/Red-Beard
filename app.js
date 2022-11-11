@@ -26,7 +26,8 @@ function validarEmail() {
     if (email=="") {
         alert("Ingresar un email");  
         esValido = false;
-    } else if (posicionArroba<1 || posicionPunto<posicionArroba+2 || posicionPunto+2>=email.length || email.includes(" ")) {
+    } else if (posicionArroba<1 || posicionPunto<posicionArroba+2 || 
+               posicionPunto+2>=email.length || email.includes(" ")) {
             alert("Ingresar un email válido");  
             esValido = false;  
     }
